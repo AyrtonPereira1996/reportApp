@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtInstituicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgEmblema"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/dire_o_provincial_de_economia"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/bem_vindo_"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgEmblema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTituloApp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:background="#fff"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/emblema" />
+
+    <TextView
+        android:id="@+id/txtTituloApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reportapp_dpefz"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtTituloApp"
+        android:layout_below="@+id/txtInstituicao"
+        android:text="@string/e_finan_as_da_zamb_zia"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/btnInfo"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#fff"
+        android:src="@drawable/info" android:contentDescription="TODO"/>
+
+    <ImageButton
+        android:id="@+id/btnLogin"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnInfo"
+        android:background="#fff"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/login" />
+
+</RelativeLayout>

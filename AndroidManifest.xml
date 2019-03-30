@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dpefz.reporteapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:allowTaskReparenting="false"
+        android:enabled="true"
+        android:icon="@drawable/emblema"
+        android:label="ReportApp DPEFZ"
+        android:persistent="true"
+        android:restoreNeedsApplication="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MenuPrincipal"
+            android:label="Perfil de funcionário" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name=".Info"
+            android:label="Informação sobre ReportApp" >
+        </activity>
+        <activity
+            android:name=".ReportActivity"
+            android:label="Reporte do problema" >
+        </activity>
+        <activity
+            android:name=".MenuPrincipalAdmin"
+            android:label="Perfil de administrador" >
+        </activity>
+        <activity
+            android:name=".UsuarioForm"
+            android:label="Registo de conta de acesso" >
+        </activity>
+        <activity
+            android:name=".RegFuncionario"
+            android:label="Registo de funcionário" >
+        </activity>
+        <activity
+            android:name=".Index"
+            android:permission="android.permission.ACCESS_CHECKIN_PROPERTIES" >
+        </activity>
+        <activity
+            android:name=".Reports"
+            android:label="Visualização de problemas" >
+        </activity>
+        <activity
+            android:name=".Funcionarios"
+            android:label="Visualização de funcionários" >
+        </activity>
+        <activity
+            android:name=".ContAcesso"
+            android:label="Visualização de contas" >
+        </activity>
+    </application>
+
+</manifest>

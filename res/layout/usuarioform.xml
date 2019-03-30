@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="horizontal"
+    tools:context=".UsuarioForm" >
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lblDesc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/por_favor_preencha_os_campos_abaixo_para_puder_registar_uma_conta_de_acesso_ao_aplicativo"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/lblCodFunc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblDesc3"
+        android:layout_marginTop="24dp"
+        android:text="@string/c_digo_do_funcion_rio_"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/txtCodFunc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblCodFunc"
+        android:layout_toRightOf="@+id/lblCodFunc"
+        android:ems="10"
+        android:hint="@string/c_digo"
+        android:inputType="text"
+        android:textColor="#000"
+        android:textColorHint="#a0a0a0"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:typeface="sans" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblNomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblCodFunc"
+        android:layout_marginTop="20dp"
+        android:text="@string/nome_de_usu_rio_"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/txtNomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblNomeUsuario"
+        android:layout_toRightOf="@+id/lblNomeUsuario"
+        android:ems="10"
+        android:hint="Nome do usuário"
+        android:inputType="text"
+        android:textColor="#000"
+        android:textColorHint="#a0a0a0"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/lblSenhaUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblNomeUsuario"
+        android:layout_below="@+id/lblNomeUsuario"
+        android:layout_marginTop="20dp"
+        android:text="Senha de usuário :"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPass"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/btnRegistaUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#222"
+        android:text="Registar"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblSenhaUsuario"
+        android:layout_alignRight="@+id/txtNomeUsuario"
+        android:ems="10"
+        android:hint="Senha de usuário"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#a0a0a0"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+</RelativeLayout>
